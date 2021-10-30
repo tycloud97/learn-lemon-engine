@@ -1,0 +1,23 @@
+{
+    "!": "read world of lemon",
+    "param": {
+        "method": "GET",
+        "endpoint": "https://api.lemoncloud.io/hello/world#a",
+        "id": "0",
+        "param": {
+            "a": 1
+        }
+    },
+    "data": {
+        "list": [{
+                "name": "lemon"
+            },
+            {
+                "name": "world"
+            }
+        ],
+        "name": "world",
+        "path": "GET /hello/world/0?a=1#a"
+    },
+    "error": ""
+}
