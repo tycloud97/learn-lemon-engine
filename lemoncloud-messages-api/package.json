@@ -1,0 +1,33 @@
+{
+  "name": "lemoncloud-messages-api",
+  "version": "1.0.0",
+  "description": "lemoncloud.io - Shared Common Messages Service API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lemoncloud-io/lemoncloud-messages-api.git"
+  },
+  "keywords": [
+    "lemoncloud",
+    "service-api"
+  ],
+  "author": "Steve (steve@lemoncloud.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lemoncloud-io/lemoncloud-messages-api/issues"
+  },
+  "homepage": "https://github.com/lemoncloud-io/lemoncloud-messages-api#readme",
+  "dependencies": {
+    "js-yaml": "^3.9.1",
+    "lemoncloud-engine-js": "^0.2.13",
+    "lodash": "^4.17.4",
+    "request": "^2.81.0"
+  }
+
+,"_resolved": "https://registry.npmjs.org/lemoncloud-messages-api/-/lemoncloud-messages-api-1.0.0.tgz"
+,"_integrity": "sha1-pNpZFi690ndARcFXetSzSAnoj8A="
+,"_from": "lemoncloud-messages-api@1.0.0"
+}

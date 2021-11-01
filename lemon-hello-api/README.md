@@ -80,7 +80,7 @@ Simple Serverless MicroService API with `Lambda` + `API Gateway` + `Web Socket` 
         }
     }
     # create Alias as `lemon-hello-api`
-    $ aws kms create-alias --profile <profile> --alias-name alias/lemon-hello-api --target-key-id 0039d20d-112233445566-387b887b4783
+    $ aws kms create-alias --profile default --alias-name alias/lemon-hello-api --target-key-id 68756154-11b8-4f4c-b763-ecef560595c6
     ```
 
 - Test encryptioin with KMS

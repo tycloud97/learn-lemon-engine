@@ -63,8 +63,8 @@ custom:
   # S3 Bucket
   #------------------------------------------------
   bucketName:
-    local: lemon-hello-www-dev
-    dev: lemon-hello-www-dev
+    local: lemon-hello-www-dev123
+    dev: lemon-hello-www-dev123
     prod: ${self:custom.CONF.${self:custom.CORE.profile}.bucket, 'lemon-hello-www'}
   #------------------------------------------------
   # CORS Default (use like `cors: ${self:custom.cors, true}`)

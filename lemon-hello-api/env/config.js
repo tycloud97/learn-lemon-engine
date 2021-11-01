@@ -15,16 +15,16 @@
 const CONF = (serverless) => {
     serverless.cli.consoleLog('Loading config settings...');
     return {
-        lemon: {
+        default: {
             name: "lemon-app",
             runtime: 'nodejs10.x',                              // Node is powered by the V8 JavaScript Engine (used in Chromium)
-            region: "ap-northeast-2",
+            region: "ap-southeast-1",
             env: "lemon.yml",                                   // environment file
             stream: undefined,                                  // Table Stream ARN
-            securityGroupIds: ['sg-08770106971509def'],         // securityGroup : `lemon-services-api`
-            subnetIds: ['subnet-0a53bcd7f3d256ce4','subnet-0ee4d1ca5eb964fc5'],   // subnetIds in VPC
+            securityGroupIds: ['sg-079606853197f989e'],         // securityGroup : `lemon-services-api`
+            subnetIds: ['subnet-01f16f3b197274fb9','subnet-0624f114ea3f8f686'],   // subnetIds in VPC
             kmsKey: '*',                                        // KMS key-id
-            bucket: 'lemon-hello-www',                          // Name of S3 public bucket.
+            bucket: 'lemon-hello-www-dev123',                          // Name of S3 public bucket.
         },
         ssocio: {
             name: "ssocio-app",
