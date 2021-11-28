@@ -52,3 +52,9 @@ app.delete('/dynamo/:type/:id',     middle, handle_dynamo);
 | develop   | +role-api, 
 
 
+
+cd api/
+cd lib/
+cd service/
+
+for i in *.js; do jsnice  $i >> $i; done
