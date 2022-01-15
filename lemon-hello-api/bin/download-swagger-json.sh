@@ -3,9 +3,9 @@
 # - based on https://github.com/dujung/serverless-aws-documentation
 cd `dirname $0`
 set -e
-stage=prod
-profile=lemon
-region=ap-northeast-2
+stage=dev
+profile=default
+region=ap-southeast-1
 name=lemon-hello-api
 apiId=`bash -c "aws apigateway get-rest-apis --output=json --region=$region --profile=$profile | /usr/bin/env node ./extract-rest-api-id.js $stage $name"`
 fileType=json
@@ -24,6 +24,7 @@ aws apigateway get-export \
   --region=$region \
   --profile=$profile \
   $outputFileName
+
 
 printf "
 $(tput setaf 2)Done, your swagger document is: ./$outputFileName$(tput sgr0)

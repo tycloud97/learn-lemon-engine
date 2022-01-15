@@ -1,12 +1,12 @@
 config:
-  target: 'https://artillery.io'
+  target: 'https://z2tdqpw1y6.execute-api.ap-southeast-1.amazonaws.com/dev/hello'
   phases:
     - duration: 60
-      arrivalRate: 20
-  defaults:
-    headers:
-      x-my-service-auth: '987401838271002188298567'
+      arrivalRate: 200
+  # defaults:
+  #   headers:
+  #     x-my-service-auth: '987401838271002188298567'
 scenarios:
   - flow:
     - get:
-        url: "/docs"
+        url: "/"

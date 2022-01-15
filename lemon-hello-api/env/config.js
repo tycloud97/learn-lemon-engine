@@ -17,14 +17,14 @@ const CONF = (serverless) => {
     return {
         default: {
             name: "lemon-app",
-            runtime: 'nodejs10.x',                              // Node is powered by the V8 JavaScript Engine (used in Chromium)
+            runtime: 'nodejs14.x',                              // Node is powered by the V8 JavaScript Engine (used in Chromium)
             region: "ap-southeast-1",
             env: "lemon.yml",                                   // environment file
             stream: undefined,                                  // Table Stream ARN
-            securityGroupIds: ['sg-079606853197f989e'],         // securityGroup : `lemon-services-api`
-            subnetIds: ['subnet-01f16f3b197274fb9','subnet-0624f114ea3f8f686'],   // subnetIds in VPC
+            securityGroupIds: ['sg-012f52d8dc7115b08'],         // securityGroup : `lemon-services-api`
+            subnetIds: ['subnet-0d5c8d7e26e0c91dd','subnet-05acd588e43e1b244'],   // subnetIds in VPC
             kmsKey: '*',                                        // KMS key-id
-            bucket: 'lemon-hello-www-dev123',                          // Name of S3 public bucket.
+            bucket: 'tycloudsolutions-lemon',                          // Name of S3 public bucket.
         },
         ssocio: {
             name: "ssocio-app",

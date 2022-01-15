@@ -86,7 +86,7 @@ custom:
 #------------------------------------------------
 provider:
   name: aws
-  profile: ${opt:profile, 'none'}
+  profile: ${opt:profile, 'default'}
   stage: ${opt:stage, 'dev'}
 
   # Lambda Runtime Environment
